@@ -1,0 +1,50 @@
+
+
+```{r}
+Texto <- read.table("H:/DOCUMENTOS/Nueva carpeta/GitHub/importacion/datos.txt", header=TRUE, 
+  sep="\t", na.strings="NA", dec=".", strip.white=TRUE)
+```
+
+```{r}
+head(Texto)
+```
+
+
+```{r}
+library(foreign, pos=15)
+```
+
+
+```{r}
+spss <- read.spss("H:/DOCUMENTOS/Nueva carpeta/GitHub/importacion/DatosSPSS.sav", 
+  use.value.labels=TRUE, max.value.labels=Inf, to.data.frame=TRUE)
+colnames(spss) <- tolower(colnames(spss))
+```
+
+```{r}
+head(spss)
+```
+
+
+```{r}
+stata <- read.dta("H:/DOCUMENTOS/Nueva carpeta/GitHub/importacion/datosStata.dta", 
+  convert.dates=TRUE, convert.factors=TRUE, missing.type=TRUE, convert.underscore=TRUE, 
+  warn.missing.labels=TRUE)
+```
+
+```{r}
+head(stata)
+```
+
+
+```{r}
+excel <- readXL("H:/DOCUMENTOS/Nueva carpeta/GitHub/importacion/datos.xls", rownames=FALSE,
+   header=TRUE, na="", sheet="datos", stringsAsFactors=TRUE)
+```
+
+```{r}
+head(excel)
+```
+
+
+
