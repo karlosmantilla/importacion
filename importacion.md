@@ -2,7 +2,7 @@
 
 
 ```r
-Texto <- read.table("H:/DOCUMENTOS/Nueva carpeta/GitHub/importacion/datos.txt", header=TRUE, 
+Texto <- read.table("datos.txt", header=TRUE, 
   sep="\t", na.strings="NA", dec=".", strip.white=TRUE)
 ```
 
@@ -30,7 +30,7 @@ library(foreign, pos=15)
 
 
 ```r
-spss <- read.spss("H:/DOCUMENTOS/Nueva carpeta/GitHub/importacion/DatosSPSS.sav", 
+spss <- read.spss("DatosSPSS.sav", 
   use.value.labels=TRUE, max.value.labels=Inf, to.data.frame=TRUE)
 colnames(spss) <- tolower(colnames(spss))
 ```
@@ -53,7 +53,7 @@ head(spss)
 
 
 ```r
-stata <- read.dta("H:/DOCUMENTOS/Nueva carpeta/GitHub/importacion/datosStata.dta", 
+stata <- read.dta("datosStata.dta", 
   convert.dates=TRUE, convert.factors=TRUE, missing.type=TRUE, convert.underscore=TRUE, 
   warn.missing.labels=TRUE)
 ```
@@ -76,7 +76,7 @@ head(stata)
 
 
 ```r
-excel <- readXL("H:/DOCUMENTOS/Nueva carpeta/GitHub/importacion/datos.xls", rownames=FALSE,
+excel <- readXL("datos.xls", rownames=FALSE,
    header=TRUE, na="", sheet="datos", stringsAsFactors=TRUE)
 ```
 
