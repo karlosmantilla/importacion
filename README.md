@@ -64,8 +64,8 @@ colnames(spss) &lt;- tolower(colnames(spss))
 ## 6    6 3705.2524     0      0 0.06708307
 </code></pre>
 <h3>Archivos de EXCEL</h3>
-<p>Finalmente, tenemos los archivos de EXCEL. Son los más comunes. Para importarlo, necesitamos de nuevo la librería <span style="font-family: 'courier new', courier, monospace;"><strong>foreign</strong></span>. Continuando con la dinámica de los casos anteriores escribimos</p>
-<pre><code class="r">excel &lt;- readXL("H:/DOCUMENTOS/Nueva carpeta/GitHub/importacion/datos.xls", rownames=FALSE,
+<p>Finalmente, tenemos los archivos de EXCEL. Son los más comunes. Para importarlo, necesitamos de nuevo la librería <span style="font-family: 'courier new', courier, monospace;"><strong>readxl</strong></span>. Continuando con la dinámica de los casos anteriores escribimos</p>
+<pre><code class="r">excel &lt;- read_excel("H:/DOCUMENTOS/Nueva carpeta/GitHub/importacion/datos.xls", rownames=FALSE,
    header=TRUE, na="", sheet="datos", stringsAsFactors=TRUE)
 </code></pre>
 <pre><code class="r">head(excel)
