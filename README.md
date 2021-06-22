@@ -161,3 +161,5 @@ Con los archivos suministrados mediante el enlace realice la actividad de import
 Enlace: https://www.dropbox.com/sh/2vkytdx76al71xz/AAByhIYhp-CYXfuthUSgG-1ba?dl=0
 
 También se puede consultar: https://github.com/karlosmantilla/importacion
+
+El script no comentado lo consigue en: https://github.com/karlosmantilla/importacion/blob/master/importacion.R
